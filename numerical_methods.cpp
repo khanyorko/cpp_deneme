@@ -26,7 +26,7 @@ bool isPerfect(int number)
     return number == poz_tam_bol_top;    
 }
 
-void fibonacci(int limit)
+void seri_fibonacci(int limit)
 {
     int i = 1, j = 1, temp;
     cout << 1 << " ";
@@ -35,6 +35,19 @@ void fibonacci(int limit)
         cout << j << " ";
         temp = j; 
         j = temp + i; 
+        i = temp;
+    }
+}
+
+void seri_a(int limit)
+{
+    int i = 2, j = 3, temp;
+    cout << 2 << " ";
+    for(int k = 0; k < limit; k++)
+    {
+        cout << j << " ";
+        temp = j; 
+        j = temp * i; 
         i = temp;
     }
 }
