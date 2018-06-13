@@ -11,6 +11,7 @@ int main()
         case '*': cout << "\t" << sol*sag << endl; break;
         case '/': sag == 0 ? cout << "\t" << "!!!"   << endl: 
                              cout << "\t" << sol/sag << endl; break;
+        default : return 0;
     }
    return main();
 }
