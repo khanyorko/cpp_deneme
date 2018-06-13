@@ -5,17 +5,17 @@ int main()
 {
     float sol, sag;
     char islem;
-    printf(">>> ");
-        scanf("\t%f %c %5f", &sol, &islem, &sag);
+    cout << ">>> ";
+        cin >> sol >> islem >> sag;
     if (islem == '+') 
-        printf("\tAns:\t%5f\n", sol+sag);
+        cout << "\tAns: " << sol+sag << endl;
     else if(islem == '-') 
-        printf("\tAns:\t%5f\n", sol-sag);
+        cout << "\tAns: " << sol-sag << endl;
     else if(islem == '*') 
-        printf("\tAns:\t%5f\n", sol*sag);
-    else if(islem == '/') 
-        printf("\tAns:\t%5f\n", sol/sag);
+        cout << "\tAns: " << sol*sag << endl;
+    else if(islem == '/' && sag != 0) 
+        cout << "\tAns: " << sol/sag << endl;
     else
-        return 0;
+        cout << "\tAns: !!!"<< endl;
     return main();
 }
